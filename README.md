@@ -1,35 +1,35 @@
 ```kotlin
 fun main() {
     // Declaración de Variables
-    val pi: Double = 3.14159  // Variable inmutable
-    println("El valor de pi es: $pi")
+    val velocidadLuz: Int = 299_792_458  // Variable inmutable
+    println("La velocidad de la luz es: $velocidadLuz m/s")
     
-    var nombre: String = "Juan"  // Variable mutable
-    println("Nombre inicial: $nombre")
+    var planeta: String = "Tierra"  // Variable mutable
+    println("Planeta inicial: $planeta")
     
-    nombre = "Pedro"  // Modificación de variable mutable
-    println("Nombre modificado: $nombre")
+    planeta = "Marte"  // Modificación de variable mutable
+    println("Planeta modificado: $planeta")
 
     // Manejo de Nulos
-    var noNulo: String = "Este es un valor no nulo"
-    println(noNulo)
+    var mensajeNoNulo: String = "Este mensaje nunca es nulo"
+    println(mensajeNoNulo)
 
-    var puedeSerNulo: String? = "Este valor puede ser nulo"  // Variable que puede ser nula
-    println(puedeSerNulo)
+    var mensajeOpcional: String? = "Este mensaje puede ser nulo"  // Variable que puede ser nula
+    println(mensajeOpcional)
 
-    puedeSerNulo = null  // Asignación de valor nulo
-    println(puedeSerNulo)
+    mensajeOpcional = null  // Asignación de valor nulo
+    println(mensajeOpcional)
 
     // Opcionales
-    var nombreOpcional: String? = null
-    val longitud: Int = nombreOpcional?.length ?: 0 
-    println("Longitud del nombre: $longitud")
+    var ciudadOpcional: String? = null
+    val longitudCiudad: Int = ciudadOpcional?.length ?: 10 
+    println("Longitud del nombre de la ciudad: $longitudCiudad")
 
-    nombreOpcional = "Kotlin"
-    val longitudNombre: Int? = nombreOpcional?.length 
-    println("Longitud del nombre: $longitudNombre")
+    ciudadOpcional = "Quito"
+    val longitudNombreCiudad: Int? = ciudadOpcional?.length  // 
+    println("Longitud del nombre de la ciudad: $longitudNombreCiudad")
     
-    nombreOpcional = null
-    val longitudNombreNulo: Int? = nombreOpcional?.length
-    println("Longitud del nombre nulo: $longitudNombreNulo")
+    ciudadOpcional = null
+    val longitudNombreCiudadNulo: Int? = ciudadOpcional?.length
+    println("Longitud del nombre de la ciudad nulo: $longitudNombreCiudadNulo")
 }
