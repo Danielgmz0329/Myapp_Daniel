@@ -26,7 +26,7 @@ fun main() {
     println("Longitud del nombre de la ciudad: $longitudCiudad")
 
     ciudadOpcional = "Quito"
-    val longitudNombreCiudad: Int? = ciudadOpcional?.length  // 
+    val longitudNombreCiudad: Int? = ciudadOpcional?.length 
     println("Longitud del nombre de la ciudad: $longitudNombreCiudad")
     
     ciudadOpcional = null
