@@ -22,11 +22,11 @@ fun main() {
 
     // Opcionales
     var nombreOpcional: String? = null
-    val longitud: Int = nombreOpcional?.length ?: 0  // Uso del operador Elvis
+    val longitud: Int = nombreOpcional?.length ?: 0 
     println("Longitud del nombre: $longitud")
 
     nombreOpcional = "Kotlin"
-    val longitudNombre: Int? = nombreOpcional?.length  // Uso del operador de llamada segura
+    val longitudNombre: Int? = nombreOpcional?.length 
     println("Longitud del nombre: $longitudNombre")
     
     nombreOpcional = null
